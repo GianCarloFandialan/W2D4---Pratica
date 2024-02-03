@@ -1,0 +1,386 @@
+/*Azzerro utto in modo tale che sia più facile usare il css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Do dei parametri di default al body come ad esempio il font*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gray{
+    color: gray;
+}
+
+.underline{
+    text-decoration: underline;
+}
+/*Inizio dall'header*/
+/*Prima nella sezione di sinistra in cui c'è il logo*/
+header{
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vw;
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.2);
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: white;
+}
+
+.logo-container{
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.logo-container img{
+    width: 20vw;
+    height: 3vh;
+    cursor: pointer;
+}
+
+/*Adesso nella sezione di destra in cui sono le varie icone*/
+
+.right-section{
+    display: flex;
+    flex-direction: row;
+    margin-right: 5vw;
+    align-items: center;
+}
+
+.icon-container{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.header-profile-picture{
+    color: white;
+    background-color: rgb(255, 102, 0);
+    font-size: 1.4rem;
+    padding: 10px 15px 10px 15px; 
+    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+    margin-left: 1vw;
+    cursor: pointer;
+}
+
+.functional-button {
+    border: 1px solid rgb(105, 105, 105);
+    padding: 0.60rem 0.7rem;
+    border-radius: 25px;
+    background-color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.icon-container{
+    margin-right: 1.5vw;
+}
+
+.icon-container:hover{
+    color: black;
+}
+
+/*Ora Stilizzo il contenuto principale*/
+
+main{
+    padding-top: 9vh;
+    display: flex;
+}
+
+.main-content{
+    width: 65vw;
+    padding: 7vh 4vw 5vh 8vw;
+    display: block;
+}
+
+/*Stilizzo la mini barra in cui vengono classificati i contenuti*/
+.content-type-container{
+    display: flex;
+    border-bottom: 1px solid gray;
+}
+
+.content-type{
+    padding: 0.60rem 0.7rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.not-selected{
+    color: gray;
+    margin-right: 0.7rem;
+}
+
+.not-selected:hover{
+    color: black;
+}
+
+.slected{
+    border-bottom: 1px solid black;
+}
+
+/*Stilizzo la sezione in cui ci sono i vari articoli*/
+section{
+    margin: 5vh 0;
+}
+
+article{
+    display: flex;
+    margin-bottom: 7vh;
+    justify-content: space-between;
+}
+
+/*Stilizzo tutta la parte di testo posta a sinistra dell'articolo*/
+.article-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 1rem;
+    width: 100%;
+}
+
+.article-description-author{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.article-description-author img{
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.article-description-author .round{
+    border-radius: 50%;
+}
+
+h4{
+    cursor: pointer;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.article-description-content{
+    width: 95%;
+    max-height: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+p{
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+}
+
+.article-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-info-details{
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.article-info-details-marked{
+    background-color: rgb(232, 230, 230);
+    padding: 0.3rem;
+    padding-left: 0.4rem;
+    border-radius: 1rem;
+}
+
+.article-info-icons{
+    display: flex;
+}
+
+/*Stilizzo l'immagine posta alla destra degli articoli*/
+.article-image{
+    display: flex;
+    align-items: center;
+}
+
+.article-image img{
+    width: 14vw;
+    height: 17vh;
+    align-self: center;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+
+/*Inizio a stilizzare la sidebar*/
+.sidebar{
+    padding-left: 4vw;
+    padding-top: 4.5vh;
+    padding-right: 8vw;
+    width: 35vw;
+    border-left: 1px solid gray;
+    display: block;
+}
+
+/*Inizio con il primo blocco con le cose di Twitter*/
+.twitter-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
+    text-align: center;
+    width: 22vw;
+    padding-left: 2vw;
+    margin-bottom: 2.5rem;
+}
+
+.twitter-block-logos{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.twitter-block-logos img{
+    height: 5.5vh;
+}
+
+.twitter-logo i{
+    color: #1DA1F2;
+    font-size: 2rem;
+}
+
+.twitter-block-text{
+    margin-bottom: 1.5rem;
+}
+
+.twitter-button{
+    padding-left: 1.8rem;
+    padding-right: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+/*Ora stilizzo il separatore*/
+.separator{
+    border-bottom: 1px solid gray;
+    margin-bottom: 3rem;
+}
+
+/*Ora stilizzo il blocco delle cose recentemente salvate*/
+
+h3{
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.topic-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 22vw;
+    margin-bottom: 3rem;
+}
+
+.topic{
+    background-color: rgb(232, 230, 230);
+    font-size: 1.1rem;
+    padding: 1rem 1.3rem 1rem 1.5rem;
+    margin-right: 0.7rem;
+    margin-bottom: 0.7rem;
+    border-radius: 28px;
+    cursor: pointer;
+}
+
+/*Stilizzo il blocco delle persone che si cosngiliano di seguire*/
+.follow-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem
+}
+
+.follow-profile-picture img{
+    width: 3.3vw;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.follow-info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    width: 13vw;
+}
+
+.follow-name{
+    margin-bottom: 0.5rem;
+    font-weight: 775;
+    cursor: pointer;
+}
+
+.follow-line .functional-button{
+    padding: 0 1.1rem; ;
+    height: 2.8rem;
+    cursor: pointer;
+}
+
+.follow{
+    margin-bottom: 3rem;
+}
+
+/*Stilizzo il blocco delle cose recentemente salvate*/
+
+.recently-saved-title{
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.recently-saved-section{
+    margin-bottom: 1.5rem;
+}
+
+.see-all{
+    color: green;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.see-all:hover{
+    color: rgba(25, 25, 25, 1);
+}
+
+.recently-saved{
+    margin-bottom: 5rem;
+}
+
+h3{
+    cursor: pointer;
+}
+
+/*Stilizzo il footer*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+}
+
+.footer-content{
+    margin-bottom: 1rem;
+    padding-right: 2rem;
+    cursor: pointer;
+}

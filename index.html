@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W2D4 - Pratica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--La struttura di come penso inzialmente abbiano impostato la pagina è presente nella cartella img/target/struttura1 e struttura2-->
+    <header>
+        <!--Inserisco il contenitore in cui inserire il logo-->
+        <div class="logo-container">
+            <img src="img/medium-logo/Medium_(website)_logo.svg" alt="Medium logo">
+        </div>
+
+        <!--Inserisco il contenitore in inserire le icone poste in alto a destra-->
+        <div class="right-section">
+            <div class="icon-container gray">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="icon-container gray">
+                <i class="fa-regular fa-bookmark"></i>
+            </div>
+            <div class="icon-container gray">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+            <button class="functional-button">
+                Resume membership
+            </button>
+            <div class="header-profile-picture">
+                T
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--Inserisco il contenitore in cui sarà contenuto il contenitore del contenuto principale-->
+        <div class="main-content">
+            <!--Inserisco il contenitore in cui ci vengono classificati i contenitori-->
+            <div class="content-type-container">
+                <div class="content-type not-selected">
+                    FOLLOWING
+                </div>
+                <div class="content-type selected">      
+                    RECCOMENDED FOR YOU
+                </div>
+            </div>
+
+            <!--Inserisco il contenitore principale in cui ci saranno i vari articoli-->
+            <section>
+                <!--Inserisco il contenitore dell'articolo-->
+                <article>
+                    <!--Inserisco il primo blocco in cui ci sono i vari dettagli dell'aritcolo-->
+                    <div class="article-description">
+                        <div class="article-description-author">
+                            <img src="img/profile-picture/profile-picture1.png" alt="Kolbi Kisk's profile picture">
+                            <h4>
+                                Kolby Sisk &nbsp;
+                            </h4>
+                            <h4>
+                                <span class="gray">in</span> Udacity Eng & Data
+                            </h4>
+                        </div>
+                        <h2>
+                            React state management in 2022 - Return of the Redux
+                        </h2>
+                        <p class="gray article-description-content">
+                            At the beginning of the year if you told me i'd pe publishing a recommendation to use Redux I would have laughed in your face Yet her.. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, voluptates?
+                        </p>
+                        <div class="article-info">
+                            <div class="article-info-details gray">
+                                Dec 3 · 4 min read · 
+                                <span class="article-info-details-marked">React </span> 
+                                · Popular on Medium
+                            </div>
+                            <div class="article-info-icons">
+                                <div class="icon-container">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Inserisco il contenitore in cui ci inserirò l'immagine dell'articolo-->
+                    <div class="article-image">
+                        <img src="img/article-image/article1.webp" alt="article 1 image">
+                    </div>
+                </article>
+
+                <article>
+                    <!--Inserisco il primo blocco in cui ci sono i vari dettagli dell'aritcolo-->
+                    <div class="article-description">
+                        <div class="article-description-author">
+                            <img src="img/profile-picture/profile-picture2.jpg" alt="Navoda Nilakshi's profile picture" class="round">
+                            <h4>
+                                Navoda Nilakshi
+                            </h4>
+                        </div>
+                        <h2>
+                            How To Sanitize Your Express App Against MongoDB Injection & Cross-Site Sripting.
+                        </h2>
+                        <p class="gray article-description-content">
+                            Easiest way to sanitize your express app.
+                        </p>
+                        <div class="article-info">
+                            <div class="article-info-details gray">
+                                Dec 19 · 6 min read · 
+                                <span class="article-info-details-marked">Web Development</span> 
+                                · Based on your reading history
+                            </div>
+                            <div class="article-info-icons">
+                                <div class="icon-container">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Inserisco il contenitore in cui ci inserirò l'immagine dell'articolo-->
+                    <div class="article-image">
+                        <img src="img/article-image/article2.webp" alt="article 2 image">
+                    </div>
+                </article>
+
+                <article>
+                    <!--Inserisco il primo blocco in cui ci sono i vari dettagli dell'aritcolo-->
+                    <div class="article-description">
+                        <div class="article-description-author">
+                            <img src="img/profile-picture/profile-picture3.png" alt="Divyesh Bhalani's profile picture">
+                            <h4>
+                                Divyesh Bhalani &nbsp;
+                            </h4>
+                            <h4>
+                                <span class="gray">in</span> DhiWise
+                            </h4>
+                        </div>
+                        <h2>
+                            React 18 new features and updates
+                        </h2>
+                        <p class="gray article-description-content">
+                            Know about some cool features and updates of React 18.
+                        </p>
+                        <div class="article-info">
+                            <div class="article-info-details gray">
+                                Nov 24 · 4 min read · 
+                                <span class="article-info-details-marked">Reactjs </span> 
+                                · Popular on Medium
+                            </div>
+                            <div class="article-info-icons">
+                                <div class="icon-container">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Inserisco il contenitore in cui ci inserirò l'immagine dell'articolo-->
+                    <div class="article-image">
+                        <img src="img/article-image/article3.webp" alt="article 3 image">
+                    </div>
+                </article>
+
+                <article>
+                    <!--Inserisco il primo blocco in cui ci sono i vari dettagli dell'aritcolo-->
+                    <div class="article-description">
+                        <div class="article-description-author">
+                            <img src="img/profile-picture/profile-picture4.jpg" alt="Vsevolod Ulyanovich's profile picture">
+                            <h4>
+                                Vsevolod Ulyanovich &nbsp;
+                            </h4>
+                            <h4>
+                                <span class="gray">in</span> Fively Blog
+                            </h4>
+                        </div>
+                        <h2>
+                            15 Best Web App Ideas for a Startup in 2021
+                        </h2>
+                        <p class="gray article-description-content">
+                            15 Startup Ideas and Technologies That coul Make You a Millionaire
+                        </p>
+                        <div class="article-info">
+                            <div class="article-info-details gray">
+                                Oct 29 · 6 min read · 
+                                <span class="article-info-details-marked">Web Development </span> 
+                                · Popular on Medium
+                            </div>
+                            <div class="article-info-icons">
+                                <div class="icon-container">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Inserisco il contenitore in cui ci inserirò l'immagine dell'articolo-->
+                    <div class="article-image">
+                        <img src="img/article-image/article4.webp" alt="article 4 image">
+                    </div>
+                </article>
+
+                <article>
+                    <!--Inserisco il primo blocco in cui ci sono i vari dettagli dell'aritcolo-->
+                    <div class="article-description">
+                        <div class="article-description-author">
+                            <img src="img/profile-picture/profile-picture1.png" alt="Kolbi Sisk's profile picture">
+                            <h4>
+                                Kolbi Sisk &nbsp;
+                            </h4>
+                            <h4>
+                                <span class="gray">in</span> Udacity Eng & Data
+                            </h4>
+                        </div>
+                        <h2>
+                            Understanding re-rendering and memoization in React
+                        </h2>
+                        <p class="gray article-description-content">
+                            The following are quick tips to increase performance in your React application by Understandingre-rendering and memoizatio. To better... Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quod consequuntur rerum id soluta voluptates corporis quam, ullam distinctio neque praesentium iure assumenda nam ipsam placeat quis, sunt eaque magni.
+                        </p>
+                        <div class="article-info">
+                            <div class="article-info-details gray">
+                                Dec 6 · 4 min read · 
+                                <span class="article-info-details-marked">Web Development </span> 
+                                · Popular on Medium
+                            </div>
+                            <div class="article-info-icons">
+                                <div class="icon-container">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Inserisco il contenitore in cui ci inserirò l'immagine dell'articolo-->
+                    <div class="article-image">
+                        <img src="img/article-image/article5.webp" alt="article 5 image">
+                    </div>
+                </article>
+
+                <article>
+                    <!--Inserisco il primo blocco in cui ci sono i vari dettagli dell'aritcolo-->
+                    <div class="article-description">
+                        <div class="article-description-author">
+                            <img src="img/profile-picture/profile-picture6.png" alt="Arun Kashyap's profile picture">
+                            <h4>
+                                Arun Kashyap &nbsp;
+                            </h4>
+                            <h4>
+                                <span class="gray">in</span> Nerd For Tech
+                            </h4>
+                        </div>
+                        <h2>
+                            Why Get Rid Of PromisesTo Fetch Data In React?
+                        </h2>
+                        <p class="gray article-description-content">
+                            How You Can Make Your Code Well Structured !!
+                        </p>
+                        <div class="article-info">
+                            <div class="article-info-details gray">
+                                Jul 5 · 5 min read · 
+                                <span class="article-info-details-marked">React </span> 
+                                · Selected for you
+                            </div>
+                            <div class="article-info-icons">
+                                <div class="icon-container">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                                <div class="icon-container">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Inserisco il contenitore in cui ci inserirò l'immagine dell'articolo-->
+                    <div class="article-image">
+                        <img src="img/article-image/article6.webp" alt="article 6 image">
+                    </div>
+                </article>
+            </section>
+        </div>
+            
+        <div class="sidebar">
+            <!--Inserisco il primo blocco di Twitter-->
+            <div class="twitter-block">
+                <div class="twitter-block-logos twitter-logo">
+                    <img src="img/medium-logo/medium-icon.svg" alt="Medium icon">
+                    <span class="gray">&nbsp;+&nbsp;</span>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <span class="twitter-block-text">
+                    Discover Medium writers you already follow on Twitter.
+                </span>
+                <div class="functional-button twitter-logo twitter-button">
+                    <i class="fa-brands fa-twitter"></i>
+                    &nbsp;Connect to Twitter
+                </div>
+                <span class="article-info-details gray underline">
+                    Maybe Later
+                </span>
+            </div>
+
+            <!--Inserisco un separatore per separare i vari blocchi-->
+            <div class="separator"></div>
+
+            <!--Inserisco il blocco dei topics raccomandati-->
+            <div class="topic-main-container">
+                <h3>
+                    Reccomended topics
+                </h3>
+                <div class="topic-container">
+                    <div class="topic">
+                        Technology
+                    </div>
+                    <div class="topic">
+                        Money
+                    </div>
+                    <div class="topic">
+                        Business
+                    </div>
+                    <div class="topic">
+                        Productivity
+                    </div>
+                    <div class="topic">
+                        Psychology
+                    </div>
+                    <div class="topic">
+                        Mindfulness
+                    </div>
+                    <div class="topic">
+                        Art
+                    </div>
+                </div>
+            </div>
+                
+            <!--Inserisco il blocco delle persone che si consigliano di seguire-->
+            <div class="follow">
+                <h3>
+                    Who to follow
+                </h3>
+                <div class="follow-line">
+                    <div class="follow-profile-picture">
+                        <img src="img/profile-picture/profile-picture7.png" alt="Lessig's profile picture">
+                    </div>
+                    <div class="follow-info">
+                        <h3 class="follow-name">
+                            Lessig
+                        </h3>
+                        <div class="article-info-details gray">
+                            law professor, activist.
+                        </div>
+                    </div>
+                    <div class="functional-button">
+                        Follow
+                    </div>
+                </div>
+
+                <div class="follow-line">
+                    <div class="follow-profile-picture">
+                        <img src="img/profile-picture/profile-picture8.jpg" alt="David Wineberg's profile picture">
+                    </div>
+                    <div class="follow-info">
+                        <h3 class="follow-name">
+                            David Wineberg
+                        </h3>
+                        <div class="article-info-details gray">
+                            author, The straight dope, or What i learned from my first...
+                        </div>
+                    </div>
+                    <div class="functional-button">
+                        Follow
+                    </div>
+                </div>
+
+                <div class="follow-line">
+                    <div class="follow-profile-picture">
+                        <img src="img/profile-picture/profile-picture9.jpg" alt="Bonsu Thompson's profile picture">
+                    </div>
+                    <div class="follow-info">
+                        <h3 class="follow-name">
+                            Bonsu Thompson
+                        </h3>
+                        <div class="article-info-details gray">
+                            Bonsu Thompson is a writer, producer, Brooklyn and 2019...
+                        </div>
+                    </div>
+                    <div class="functional-button">
+                        Follow
+                    </div>
+                </div>
+            </div>
+
+            <!--Inserisco il blocco delle cose recentemente salvate-->
+            <div class="recently-saved">
+                <h3>Recently saved</h3>
+                <div class="recently-saved-section">
+                    <div class="article-description-author">
+                        <img src="img/profile-picture/profile-picture10.png" alt="Eva Keiffenheim's profile picture" >
+                        <h4>
+                            Eva Keiffenheim &nbsp;
+                        </h4>
+                        <h4>
+                            <span class="gray">in</span> Age of Awareness
+                        </h4>
+                    </div>
+                    <h3 class="recently-saved-title">
+                        The Feynman Technique Will Make You Remember What You Read</h3>
+                    <div class="article-info-details gray">
+                        Oct 2.2020 · 6 min read ★
+                    </div>
+                </div>
+
+                <div class="recently-saved-section">
+                    <div class="article-description-author">
+                        <img src="img/profile-picture/profile-picture11.jpg" alt="chrissy teigem's profile picture" class="round">
+                        <h4>
+                            chrissy teigen &nbsp;
+                        </h4>
+                    </div>
+                    <h3 class="recently-saved-title">
+                        Hi.
+                    </h3>
+                    <div class="article-info-details gray">
+                        Oct 27.2020 · 8 min read
+                    </div>
+                </div>
+
+                <span class="see-all">See all (3)</span>
+            </div>
+
+            <footer>
+                <div class="footer-content gray">
+                    Help
+                </div>
+                <div class="footer-content gray">
+                    Status
+                </div>
+                <div class="footer-content gray">
+                    Writers
+                </div>
+                <div class="footer-content gray">
+                    Blog
+                </div>
+                <div class="footer-content gray">
+                    Careers
+                </div>
+                <div class="footer-content gray">
+                    Privacy
+                </div>
+                <div class="footer-content gray">
+                    Terms
+                </div>
+                <div class="footer-content gray">
+                    About
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/5fb0eb8b3b.js" crossorigin="anonymous"></script>
+</body>
+</html>
